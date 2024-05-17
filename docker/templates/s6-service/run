@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd /srv/%%service-name%%
+source .venv/bin/activate
+exec 2>&1
+exec python main.py
